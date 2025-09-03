@@ -35,3 +35,7 @@ git submodule add https://codeberg.org/reiver/readmode-css readmode-css
 ## Author
 
 Package **readmode-css** was written by [Charles Iliya Krempeaux](http://reiver.link)
+
+## See Also
+
+* https://codeberg.org/reiver/go-readmode
