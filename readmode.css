@@ -79,7 +79,7 @@ pre {
 	background-color: #EBE0C9;
 	padding: 1rem;
 	border-radius: 0.5rem;
-	white-space: pre-wrap; /* This ensures line breaks are respected */
+	white-space: pre;
 	overflow-x: auto;
 }
 kbd {
