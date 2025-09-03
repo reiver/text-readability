@@ -27,21 +27,6 @@ main {
 		margin-bottom: 1.5rem;
 		text-align: justify;
 	}
-hgroup {
-	margin-bottom: 2rem;
-	text-align: center;
-}
-	hgroup h1 {
-		font-size: 2.25rem;
-		font-weight: 700;
-		color: #5F4B32;
-		margin-bottom: 1rem;
-	}
-	hgroup p {
-		font-size: 1.125rem;
-		color: #4D3A29;
-		text-align: center;
-	}
 figure {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
@@ -169,6 +154,22 @@ table {
 	}
 	tbody tr:last-child td {
 		border-bottom: none;
+	}
+
+hgroup, main > h1:first-child {
+	margin-bottom: 2rem;
+	text-align: center;
+}
+	hgroup h1, main > h1:first-child {
+		font-size: 2.25rem;
+		font-weight: 700;
+		color: #5F4B32;
+		margin-bottom: 1rem;
+	}
+	hgroup p {
+		font-size: 1.125rem;
+		color: #4D3A29;
+		text-align: center;
 	}
 
 h1, h2, h3, h4, h5, h6 {
