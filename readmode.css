@@ -98,7 +98,9 @@ main > :first-child {
 main > hgroup:first-child,
 main > h1:first-child,
 main > article > hgroup:first-child,
-main > article > h1:first-child {
+main > article > h1:first-child,
+main > article > header:first-child > hgroup,
+main > article > header:first-child > h1 {
 	text-align: center;
 }
 
