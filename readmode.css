@@ -77,7 +77,7 @@ body {
 	background: #fdf6e3;
 	color: #333;
 	letter-spacing: 0.01em;
-	text-align: left;
+	text-align: start;
 	text-wrap: pretty;
 	overflow-wrap: break-word;
 	hanging-punctuation: first last;
@@ -299,6 +299,28 @@ kbd {
 	box-shadow: 0 1px 0 #888;
 }
 
+/***************************************************************************************************
+ *                                                                                                 *
+ * Inline Element: superscript citations (custom)                                                  *
+ *                                                                                                 *
+ * use with HTML code such as:                                                                     *
+ *                                                                                                 *
+ *      <sup class="citation"><a href="http://example.com" title="example"></a></sup>              *
+ *                                                                                                 *
+ * Note the lack of text inside the <a></a> tags. This is intentional.                             *
+ * The CSS is designed to automatically deal with this.                                            *
+ *                                                                                                 *
+ **************************************************************************************************/
+
+body {
+	counter-reset: citation-number-counter;
+}
+
+sup.citation a:before {
+	counter-increment: citation-number-counter +1;
+	content: "[" counter(citation-number-counter) "]";
+}
+
 /* === Tables === */
 
 table {
@@ -308,7 +330,7 @@ table {
 
 th, td {
 	padding: 0.5em 0.75em;
-	text-align: left;
+	text-align: start;
 }
 
 /* === Images and Figures === */
