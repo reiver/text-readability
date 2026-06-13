@@ -22,13 +22,58 @@
 		<hgroup>
 			<h1 property="headline">Text Alignment</h1>
 			<p>
-				In written (human) languages, start-aligned text is always preferred over justified text because the ragged end edge helps the eye find the next line.
+				use <em>start</em> aligned text
 			</p>
 		</hgroup>
 		<p>
 			by <a href="https://reiver.link/">Charles Iliya Krempeaux</a> (reiver)
 		</p>
 	</header>
+	<p>
+		The <abbr title="too long; didn't read">TL;DR</abbr> is, use:
+	</p>
+	<figure>
+		<pre><code>
+body {
+	text-align: start;
+}
+		</code></pre>
+	</figure>
+	<p>
+		Or better yet, use:
+	</p>
+	<figure>
+		<pre><code>
+```css
+body {
+	text-align: start;
+	text-wrap: pretty;
+	overflow-wrap: break-word;
+	hanging-punctuation: first last;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-wrap: balance;
+}
+		</code></pre>
+		<figcaption>
+			The recommended CSS to use to improve <strong>Text Alignment</strong> for the purposes of <strong>Text Readability</strong>.
+		</figcaption>
+	</figure>
+	<section>
+		<h1>The Problem With Justified Text</h2>
+		<p>
+			Justified text (aligned on both the <em>left</em> and <em>right</em> edges) creates a book-like appearance — but, creates serious problems on the <abbr title="World Wide Web">Web</abbr>.
+		</p>
+		<p>
+			Unless sophisticated hyphenation is used (which on the <abbr title="World Wide Web">Web</abbr> it isn't), justified text creates <strong>uneven gaps between words</strong> — sometimes called “rivers of white” or “rivers of white space” that flow vertically through paragraphs.
+		</p>
+		<p>
+			These "rivers of white space" are distracting for all readers and devastating for dyslexic readers, for whom they continuously pull focus away from word shapes, drastically accelerating eye strain and dyslexia reading fatigue
+			<sup class="citation"><a href="https://www.w3.org/WAI/WCAG22/Understanding/visual-presentation.html" title="Web Content Accessibility Guidelines (WCAG): Visual Presentation (Level AAA)"></a></sup>
+			<sup class="citation"><a href="https://www.w3.org/TR/WCAG22/#visual-presentation" title="Web Content Accessibility Guidelines (WCAG) 2.2: Success Criterion 1.4.8 Visual Presentation"></a></sup>.
+		</p>
+	</section>
 	<p>
 		<strong>Text Alignment</strong> affects <strong>Text Readability</strong>.
 		There are 4 common types of <strong>text alignment</strong>:
