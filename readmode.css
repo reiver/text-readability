@@ -150,6 +150,49 @@ a:visited {
 	color: #6b4c9a;
 }
 
+/* === Breadcrumbs === */
+
+.breadcrumbs {
+	font-size: 0.875em;
+	margin-bottom: 2em;
+}
+
+.breadcrumbs ol {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.breadcrumbs li + li::before {
+	content: "\203A"; /* › */
+	margin-inline: 0.5em;
+	color: #888;
+}
+
+.breadcrumbs a {
+	color: #1a5ca8;
+	text-decoration: none;
+}
+
+.breadcrumbs a:visited {
+	color: #6b4c9a;
+}
+
+/* must appear after a:visited — the current page is always :visited */
+.breadcrumbs a[aria-current="page"] {
+	font-weight: bold;
+	color: inherit;
+}
+
+.breadcrumbs a:focus-visible {
+	outline: 2px solid #1a5ca8;
+	outline-offset: 2px;
+	border-radius: 2px;
+}
+
 /* === Code === */
 
 pre, code {
@@ -300,6 +343,13 @@ figcaption {
 	a { color: #6cb4ee; }
 	a:visited { color: #b49fdc; }
 
+	.breadcrumbs li + li::before { color: #888; }
+	.breadcrumbs a { color: #6cb4ee; }
+	.breadcrumbs a:visited { color: #b49fdc; }
+	/* must appear after a:visited */
+	.breadcrumbs a[aria-current="page"] { color: inherit; }
+	.breadcrumbs a:focus-visible { outline-color: #6cb4ee; }
+
 	code, pre {
 		background: #2b2b2b;
 	}
@@ -327,6 +377,10 @@ figcaption {
 	}
 	a { color: #0e3f72; }
 	a:visited { color: #4a2d78; }
+	.breadcrumbs li + li::before { color: #000; }
+	.breadcrumbs a { color: #0e3f72; }
+	.breadcrumbs a:visited { color: #4a2d78; }
+	.breadcrumbs a:focus-visible { outline-color: #0e3f72; }
 	code, pre { background: #e0e0e0; }
 	figcaption { color: #000; }
 	blockquote { border-left-color: #000; }
@@ -344,6 +398,10 @@ figcaption {
 	}
 	a { color: #8fcbff; }
 	a:visited { color: #d0b8f0; }
+	.breadcrumbs li + li::before { color: #fff; }
+	.breadcrumbs a { color: #8fcbff; }
+	.breadcrumbs a:visited { color: #d0b8f0; }
+	.breadcrumbs a:focus-visible { outline-color: #8fcbff; }
 	code, pre { background: #1a1a1a; }
 	figcaption { color: #fff; }
 	blockquote { border-left-color: #fff; }
@@ -377,6 +435,11 @@ figcaption {
 	a, a:visited {
 		color: black;
 	}
+
+	.breadcrumbs li + li::before { color: black; }
+	.breadcrumbs a, .breadcrumbs a:visited { color: black; }
+	.breadcrumbs a[aria-current="page"] { color: black; }
+	.breadcrumbs a::after { content: none; }
 
 	code, pre {
 		background: #f0f0f0;
