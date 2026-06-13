@@ -95,6 +95,13 @@ main > :first-child {
 	margin-top: 0;
 }
 
+main > hgroup:first-child,
+main > h1:first-child,
+main > article > hgroup:first-child,
+main > article > h1:first-child {
+	text-align: center;
+}
+
 h1 { font-size: 3.052rem; }  /* 1.25⁵ */
 h2 { font-size: 2.441rem; }  /* 1.25⁴ */
 h3 { font-size: 1.953rem; }  /* 1.25³ */
