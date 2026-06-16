@@ -227,7 +227,7 @@ blockquote {
 	border-left: 4px solid #b58900;
 	padding-left: 1.5em;
 	padding-block: 0.5em;
-	margin-left: 0;
+	margin-inline: 0;
 	margin-block: 2em;
 	font-style: normal;
 	background: rgba(0,0,0,0.025);
