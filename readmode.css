@@ -224,11 +224,14 @@ pre code {
 /* === Blockquotes === */
 
 blockquote {
-	border-left: 3px solid #888;
+	border-left: 4px solid #b58900;
 	padding-left: 1.5em;
+	padding-block: 0.5em;
 	margin-left: 0;
 	margin-block: 2em;
 	font-style: normal;
+	background: rgba(0,0,0,0.025);
+	border-radius: 0 0.25em 0.25em 0;
 }
 
 /* === Lists === */
@@ -377,7 +380,8 @@ figcaption {
 	}
 
 	blockquote {
-		border-left-color: #888;
+		border-left-color: #d4a017;
+		background: rgba(255,255,255,0.03);
 	}
 
 	figcaption {
@@ -405,7 +409,7 @@ figcaption {
 	.breadcrumbs a:focus-visible { outline-color: #0e3f72; }
 	code, pre { background: #e0e0e0; }
 	figcaption { color: #000; }
-	blockquote { border-left-color: #000; }
+	blockquote { border-left-color: #000; background: rgba(0,0,0,0.05); }
 	hr { border-top-color: #000; }
 	kbd { border-color: #000; box-shadow: 0 1px 0 #000; }
 	mark { background: #ff0; color: #000; }
@@ -426,7 +430,7 @@ figcaption {
 	.breadcrumbs a:focus-visible { outline-color: #8fcbff; }
 	code, pre { background: #1a1a1a; }
 	figcaption { color: #fff; }
-	blockquote { border-left-color: #fff; }
+	blockquote { border-left-color: #fff; background: rgba(255,255,255,0.06); }
 	hr { border-top-color: #fff; }
 	kbd { border-color: #fff; box-shadow: 0 1px 0 #fff; }
 	mark { background: #886600; color: #fff; }
@@ -465,6 +469,11 @@ figcaption {
 
 	code, pre {
 		background: #f0f0f0;
+	}
+
+	blockquote {
+		border-left-color: #000;
+		background: none;
 	}
 
 	a[href^="http"]::after {
