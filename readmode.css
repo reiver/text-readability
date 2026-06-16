@@ -234,6 +234,10 @@ blockquote {
 	border-radius: 0 0.25em 0.25em 0;
 }
 
+blockquote > :last-child {
+	margin-bottom: 0;
+}
+
 /* === Lists === */
 
 li {
