@@ -238,6 +238,11 @@ blockquote > :last-child {
 	margin-bottom: 0;
 }
 
+blockquote blockquote {
+	border-left-color: #c4a44a;
+	background: transparent;
+}
+
 /* === Lists === */
 
 li {
@@ -388,6 +393,11 @@ figcaption {
 		background: rgba(255,255,255,0.03);
 	}
 
+	blockquote blockquote {
+		border-left-color: #a8882e;
+		background: transparent;
+	}
+
 	figcaption {
 		color: #aaa;
 	}
@@ -414,6 +424,7 @@ figcaption {
 	code, pre { background: #e0e0e0; }
 	figcaption { color: #000; }
 	blockquote { border-left-color: #000; background: rgba(0,0,0,0.05); }
+	blockquote blockquote { border-left-color: #555; background: transparent; }
 	hr { border-top-color: #000; }
 	kbd { border-color: #000; box-shadow: 0 1px 0 #000; }
 	mark { background: #ff0; color: #000; }
@@ -435,6 +446,7 @@ figcaption {
 	code, pre { background: #1a1a1a; }
 	figcaption { color: #fff; }
 	blockquote { border-left-color: #fff; background: rgba(255,255,255,0.06); }
+	blockquote blockquote { border-left-color: #aaa; background: transparent; }
 	hr { border-top-color: #fff; }
 	kbd { border-color: #fff; box-shadow: 0 1px 0 #fff; }
 	mark { background: #886600; color: #fff; }
